@@ -19,6 +19,7 @@ public class BasicNavigation {
         // set up a driver method.
         // get is the first method, the key to open the door
         driver.get("http://google.com"); //to open website
+        //now you can send this to github by clicking the green check mark at the top right.
 
     }
 }
