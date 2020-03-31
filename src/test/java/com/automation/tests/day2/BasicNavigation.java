@@ -40,6 +40,6 @@ public class BasicNavigation {
         driver.close(); //to close browser
 
      //troubleshoot:  if you have any issues with running this, first try updating Chrome and updating Intellij.
-
+//try to commit to github
     }
 }
