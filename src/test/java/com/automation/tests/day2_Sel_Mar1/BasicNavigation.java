@@ -1,4 +1,4 @@
-package com.automation.tests.day2;
+package com.automation.tests.day2_Sel_Mar1;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -79,8 +79,12 @@ public class BasicNavigation {
         Thread.sleep(3000);
         System.out.println("current url:" +driver.getCurrentUrl()  );
 
+        driver.close(); //to close browser - (current window or tab)
 
-        driver.close(); //to close browser
+        //there is another command called quit.
+        //Quit method shuts down all windows (or tabs) that have been opened by Webdriver.
+       //  driver.quit();       // Quit means Quit all
+        // Close, just closes the current one. (think of Close = "Close Tab" )
 
     }
     public static void verifyEquals(String arg1, String arg2){
@@ -89,7 +93,6 @@ public class BasicNavigation {
         }else{
             System.out.println("args equal: Test Failed");
         }
-
     }
 }
 
