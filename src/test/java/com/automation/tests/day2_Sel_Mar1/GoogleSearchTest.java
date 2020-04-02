@@ -31,7 +31,44 @@ public class GoogleSearchTest {
         //add another wait to make sure computer has time to process all this
         Thread.sleep(2000);
 
-        driver.quit();
+        //now let's try finding something by link text:
+        //look at google.com with the "inspect" HTML box open
+        //if click on the News link at the top,you will see the highlighted code for that.
+        //We know this News button has a link to the news; also <a> means link text.
+        // You can direct Selenium to click on the news link using link text locator:
+        WebElement news = driver.findElement(By.linkText("News"));
+        news.click();  //for Selenium to simulate a click on the News button.
+        Thread.sleep(4000);
 
+        driver.quit();
     }
 }
+/*
+Recap:
+Basic Navigation
+get() - open website
+navigate().to() - same as get
+navigate().back() - go back to previous site
+navigate().forward() - move forward in the browser history
+navigater().refresh() - reload the page
+getTitle() - displays page title (not URL)
+getCurrentURL - displays URL of open page
+close()  closes current window "(or tabs)
+quit()  closes all windows (or tabs)
+windowHandle - Id of each window;  use to move between windows.
+WebElement - objects that appear on a web page
+Locators - name, Id, tag name, class name, text, link text, Xpath, Css.
+
+Syntax for finding webElement
+WebElement = driver.findElement(By.name("value");
+
+to simulate entering text:
+element.sendKeys()
+
+to press enter button:
+element.sendKeys(keys.ENTER);
+
+to click:
+element.click()
+
+ */
