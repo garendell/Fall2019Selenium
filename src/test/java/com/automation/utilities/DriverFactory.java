@@ -18,6 +18,7 @@ public class DriverFactory {
         } else {
             WebDriverManager.firefoxdriver().setup();
             return new FirefoxDriver();
+        //Homework will be to improve this method ... ??
 
         }
     }
