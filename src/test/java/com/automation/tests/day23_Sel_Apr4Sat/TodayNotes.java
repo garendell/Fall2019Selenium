@@ -1,6 +1,6 @@
-package com.automation.tests.day23_Apr4;
+package com.automation.tests.day23_Sel_Apr4Sat;
 
-public class Today {
+public class TodayNotes {
 }
 
 /*I'm watching this session live... but
@@ -17,6 +17,6 @@ that we can access from a link in Selenium
 We just started the second hour, I think I might be getting lost.
 This is a 6-hour day, so I might use this time better by
 continuing to go through the videos as I have been...
-I'm on Vasyl's "Day 5 Video" now, (which is day 3 of Selenium,
-so I'm in the package called day3_Mar3, FirstElementsPractice).
+I'm on Vasyl's day 3 of Selenium, (Day5 of Vasyl)
+so I'm in the package called day3_Mar3, FindElementsPractice).
  */

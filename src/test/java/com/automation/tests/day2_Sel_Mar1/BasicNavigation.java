@@ -8,7 +8,7 @@ public class BasicNavigation {
     public static void main(String[] args) throws InterruptedException {
 
         /* to start a selenium script we need to:
-        set up webdriver (browser driver) and
+        set up webdrivermanager (browser driver) and
         create webdriver object
          */
         WebDriverManager.chromedriver().setup();
@@ -96,6 +96,8 @@ public class BasicNavigation {
     }
 }
 
-//troubleshoot:  if you have any issues with running this, first try updating Chrome and updating Intellij.
+//troubleshoot:  if you have any issues with running this,
+// first try updating Chrome and updating Intellij.
+
 //try to commit to github
 

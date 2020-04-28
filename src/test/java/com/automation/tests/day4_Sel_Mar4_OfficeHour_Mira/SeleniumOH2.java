@@ -1,4 +1,4 @@
-package com.automation.tests.day4_Mar4_OfficeHour;
+package com.automation.tests.day4_Sel_Mar4_OfficeHour_Mira;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -25,7 +25,7 @@ public class SeleniumOH2 {
         WebElement search_box = driver.findElement(By.id("search_query_top"));
         //WebElement - class in selenium/java and it has many useful methods
         //.sendKeys("value that we want to send - input tag ")
-        search_box.sendKeys("tshirt" + Keys.ENTER);
+        search_box.sendKeys("tshirt" + Keys.ENTER);  //ENTER is an enum
         Thread.sleep(3000);
         /*
         <p class="alert alert-warning">
@@ -33,11 +33,11 @@ public class SeleniumOH2 {
             </p>
          */
 
-        //+++++++++++Why a try catch block?  why not throw Exception?++++++++++++  and why a stack trace??
+        //optional you can click on try catch - throws Exception in the main method
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
-            e.printStackTrace();
+            e.printStackTrace();     //why stack trace???
         }
         WebElement error = driver.findElement(By.xpath("//p[@class='alert alert-warning']"));
         String errorText = error.getText();
@@ -68,7 +68,8 @@ public class SeleniumOH2 {
          */
         WebElement addToCart = driver.findElement(By.className("button ajax_add_to_cart_button btn btn-default"));
         addToCart.click();
-//        driver.quit();
+
+        //driver.quit();
     }
 }
 
